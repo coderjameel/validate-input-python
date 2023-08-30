@@ -1,27 +1,36 @@
-def gcom(prm):
+def gcom(prm=""):
     while True:
         try:
-            complexnum = complex(input(prm + " "))
+            if prm != "":
+                complexnum = complex(input())
+            else:
+                complexnum = complex(input(prm + " "))
         except ValueError:
             pass
         else:
             return complexnum
             break
 
-def gflt(prm):
+def gflt(prm=""):
     while True:
         try:
-            flt = float(input(prm + " "))
+            if prm != "":
+                flt = float(input())
+            else:
+                flt = float(input(prm + " "))
         except ValueError:
             pass
         else:
             return flt
             break
 
-def gint(prm):
+def gint(prm=""):
     while True:
         try:
-            integer = int(input(prm + " "))
+            if prm != "":
+                integer = int(input())
+            else:
+                integer = int(input(prm + " "))
         except ValueError:
             pass
         else:
